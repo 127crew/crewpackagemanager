@@ -14,4 +14,5 @@ setup(
     },
     author='127 Crew',
     description='A Package Manager for C/C++',
+    license='GPL-3.0',
 )

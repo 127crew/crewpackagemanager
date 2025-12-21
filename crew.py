@@ -17,7 +17,7 @@ def handle_init(args):
     description = input("description: ")
     main = input("entry point: (main.c) ") or "main.c"
     author = input("author: ")
-    license = input("license: (ISC) ") or "ISC"
+    license = input("license: (GPL-3.0) ") or "GPL-3.0"
     
     # Attempt creation. Fail gracefully if it exists.
     if create_initial_crew_file(name, version, description, main, author, license):

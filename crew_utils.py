@@ -200,7 +200,7 @@ def create_project(project_name, template="c"):
             "start": "./app"
         },
         "author": "",
-        "license": "ISC",
+        "license": "GPL-3.0",
         "dependencies": {}
     }
     

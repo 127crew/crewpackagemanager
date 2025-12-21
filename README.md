@@ -61,7 +61,8 @@ python3 crew.py install https://github.com/nothings/stb.git
 # Install a C++ library (nlohmann json)
 python3 crew.py install https://github.com/nlohmann/json.git@v3.11.2
 ```
-
+## License
+This project is licensed under the GPL-3.0 License - see the [LICENSE](LICENSE) file for details.
 ## Examples
 
 ### C Example (`stb_image`)

@@ -1,0 +1,23 @@
+# Crew Modules
+crew_modules/
+
+# Compiled Binaries
+*.o
+*.a
+*.so
+*.exe
+*.out
+app
+app_c
+app_cpp
+
+# Python
+__pycache__/
+*.py[cod]
+
+# Test Project Directories (created during walkthrough)
+my-c-app/
+my-cpp-app/
+
+# Local Dev Config (Optional: keep if you want to share dev dependencies)
+# crew.json

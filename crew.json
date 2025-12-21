@@ -1,0 +1,17 @@
+{
+  "name": "crewpackagemanager",
+  "version": "1.0.0",
+  "description": "Package manager for C/C++",
+  "main": "main.c",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "gcc main.c -o app",
+    "hello": "echo Hello from Crew!"
+  },
+  "author": "Darshan R",
+  "license": "ISC",
+  "dependencies": {
+    "stb": "https://github.com/nothings/stb.git",
+    "json": "https://github.com/nlohmann/json.git@v3.11.2"
+  }
+}

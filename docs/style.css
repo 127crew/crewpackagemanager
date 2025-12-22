@@ -55,6 +55,14 @@ nav {
     font-size: 1.5rem;
     letter-spacing: -0.5px;
     color: var(--text-primary);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.logo img {
+    height: 32px;
+    width: auto;
 }
 
 .links a {

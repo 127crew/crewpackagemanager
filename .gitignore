@@ -15,9 +15,10 @@ app_cpp
 __pycache__/
 *.py[cod]
 
-# Test Project Directories (created during walkthrough)
+# Test Project Directories 
 my-c-app/
 my-cpp-app/
+my-def-c/
 
-# Local Dev Config (Optional: keep if you want to share dev dependencies)
+# Local Dev Config 
 # crew.json

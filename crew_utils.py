@@ -201,8 +201,14 @@ def create_project(project_name, template="c"):
         },
         "author": "",
         "license": "GPL-3.0",
-        "dependencies": {}
+        "dependencies": {
+            "json": "https://github.com/nlohmann/json.git" if template == "cpp" else None,
+            "stb": "https://github.com/nothings/stb.git" if template == "c" else None
+        }
     }
+    
+    # Clean up None values
+    crew_data["dependencies"] = {k: v for k, v in crew_data["dependencies"].items() if v}
     
     with open(os.path.join(project_name, "crew.json"), "w") as f:
         json.dump(crew_data, f, indent=2)

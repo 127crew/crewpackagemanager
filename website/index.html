@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crew - The C/C++ Package Manager</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Fira+Code:wght@400;500&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="background-glow"></div>
+
+    <nav>
+        <div class="logo">crew</div>
+        <div class="links">
+            <a href="#install">Install</a>
+            <a href="libraries.html">Libraries</a>
+            <a href="#usage">Usage</a>
+            <a href="#philosophy">Philosophy</a>
+            <a href="https://github.com/127crew/crewpackagemanager" target="_blank" class="github-link">GitHub</a>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <span class="badge">v1.0.0 Released</span>
+            <h1>The Package Manager <br> <span class="gradient-text">C/C++ Deserves</span></h1>
+            <p>Simple. Git-based. No complex build systems. Just code.</p>
+            <div class="cta-group">
+                <button onclick="copyInstall()" class="primary-btn">
+                    <span class="cmd">pip install crew-cli</span>
+                    <span class="icon">📋</span>
+                </button>
+                <a href="#usage" class="secondary-btn">Read Docs</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="features" class="grid-section">
+            <div class="card">
+                <h3>🚀 Instant Start</h3>
+                <p>Scaffold new C or C++ projects in seconds with built-in best practices.</p>
+            </div>
+            <div class="card">
+                <h3>📦 Git-Native</h3>
+                <p>Install libraries directly from GitHub. Supports tags, branches, and versions.</p>
+            </div>
+            <div class="card">
+                <h3>🛠️ Build Ready</h3>
+                <p>Auto-generates include flags for GCC, Clang, or any compiler you love.</p>
+            </div>
+        </section>
+
+        <section id="install" class="content-section">
+            <h2>Installation</h2>
+            <div class="code-block">
+                <div class="code-header">Terminal</div>
+                <pre><code class="language-bash">pip install crew-cli</code></pre>
+            </div>
+            <p class="subtext">Or clone and install from source if you want to contribute.</p>
+        </section>
+
+        <section id="usage" class="content-section alternate-bg">
+            <h2>Workflow</h2>
+
+            <div class="step">
+                <div class="step-text">
+                    <h3>1. Create</h3>
+                    <p>Start a new project with a ready-to-go template.</p>
+                </div>
+                <div class="code-block">
+                    <pre><code class="language-bash">crew create my-game --template cpp</code></pre>
+                </div>
+            </div>
+
+            <div class="step">
+                <div class="step-text">
+                    <h3>2. Install</h3>
+                    <p>Add dependencies from any Git URL.</p>
+                </div>
+                <div class="code-block">
+                    <pre><code class="language-bash">cd my-game
+crew install https://github.com/nlohmann/json.git</code></pre>
+                </div>
+            </div>
+
+            <div class="step">
+                <div class="step-text">
+                    <h3>3. Run</h3>
+                    <p>Build and run your application.</p>
+                </div>
+                <div class="code-block">
+                    <pre><code class="language-bash">crew run build
+crew run start</code></pre>
+                </div>
+            </div>
+        </section>
+
+        <section id="philosophy" class="centered-section">
+            <h2>Why Crew?</h2>
+            <p>C and C++ are powerful, but dependency management shouldn't be painful. Crew brings the <strong>ease of
+                    npm</strong> to the compiled world.</p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>© 2025 <strong>127 Crew</strong>. Open Source (GPL-3.0).</p>
+            <p>Built for the community, by the community.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

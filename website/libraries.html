@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crew Registry - Discover Packages</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Fira+Code:wght@400;500&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="background-glow"></div>
+
+    <nav>
+        <div class="logo">crew</div>
+        <div class="links">
+            <a href="index.html">Home</a>
+            <a href="libraries.html" class="active">Libraries</a>
+            <a href="index.html#usage">Usage</a>
+            <a href="https://github.com/127crew/crewpackagemanager" target="_blank" class="github-link">GitHub</a>
+        </div>
+    </nav>
+
+    <header class="hero small-hero">
+        <div class="hero-content">
+            <h1>Discover <span class="gradient-text">Packages</span></h1>
+            <p>Browse the curated list of compatible C/C++ libraries.</p>
+
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Search libraries (e.g. json, log, graphics)...">
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="library-list" class="grid-section">
+            <!-- Libraries from script.js -->
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>© 2025 <strong>127 Crew</strong>. Open Source (GPL-3.0).</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
